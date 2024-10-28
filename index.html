@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> yoyo power</title>
+
+  <link rel="icon" type="image/png" href="images/logo (2).png" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="sty.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<body class="bg-customColor">
+  <!--start header-->
+  <div class="header top-0 left-0 right-0 z-50 pr-0  fixed mt-1  ">
+    <div class="container flex justify-between items-center bg-zinc-100  text-white max-h-14 flex-nowrap  ">
+      <img src="images/logo (2).png" class="w-10 h-10 rounded-full bg-white">
+
+      
+        <ul class="  flex justify-between items-center cursor-pointer  list-none text-emerald-600 text-2xl  ">
+          <li><a href="#index" onclick="navigateToPage('home')"
+              class="h-10 p-1 overflow-hidden duration-75 my-0 mx-3 text-xl  hover:text-emerald-400">Home</a></li>
+          <li><a href="#products" onclick="navigateToPage('products')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">products</a></li>
+          <li><a href="#about" onclick="navigateToPage('about')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">About</a></li>
+          <li><a href="#collection" onclick="navigateToPage('collection')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">collection</a></li>
+          <li><a href="#contact" onclick="navigateToPage('contact')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">Contact</a></li>
+        </ul>
+      
+      <div class="icons flex justify-between items-center flex-row text-xl  cursor-pointer text-emerald-600">
+        <i class="fa-solid fa-bars text-xl hidden" onclick="show()" id="toggle-Menu"></i>
+      <i class="fa-solid fa-search px-3  hover:text-emerald-950" onclick="showbar()" id="search-btn"></i>
+      <div class="relative ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-emerald-950" width="28" height="28" viewBox="0 0 24 24" stroke-width="2"
+          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+          <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+        </svg>
+        <small id="cart-count"
+          class="bg-red-500 w-4 h-4 absolute -top-2 -left-2 rounded-full text-center text-xs text-emerald-50">0</small>
+      </div>
+    </div>
+
+      <form action="" id="search-form" class="   absolute container top-full left-0 right-0  bg-emerald-900  items-center z-50 py-2 px-2 border-t-2 rounded-md hidden ">
+        <input type="search" id="search-bar" placeholder="what you looking for..." class="  p-1 text-gray-800 text-lg rounded-lg w-full" >
+        <label for="search-bar" class="fas fa-search text-white cursor-pointer text-sm
+        my-0 mx-2.5 "></label>
+      </form>
+  </div>
+  </div>
+  <!--end header-->
+  <!-- start landing -->
+  <div class=" relative text-center p-0 m-0">
+    <img class=" bg-no-repeat bg-cover bg-center w-full" src="/images/landing (2).jpg" alt="">
+    <div class="container  pr-0 pl-0 m-0">
+      <div class="absolute top-1/3 right-1/2 p-2 translate-x-5 bg-gray-300 opacity-85 ml-10 text-center rounded-md w-1/2 max-sm:hidden">
+        <h1 class="text-emerald-600 font-medium text-lg p-2">Anything For Your Baby</h1>
+        <p class="text-lg m-2 text-emerald-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing<br>
+          Atque voluptatibus eligendi
+        </p>
+        <button class="btn  bg-emerald-600 hover:bg-emerald-800 text-white" onclick="navigateToPage('products')">Shop</button>
+      </div>
+    </div>
+  </div>
+  <!-- end landing -->
+  <!-- start products -->
+   <div class="container pt-3 bg-zinc-50">
+    <h1 class=" text-emerald-500  text-2xl text-center font-medium ">Our Products</h1>
+  <main class="  flex flex-col max-w-6xl mx-auto sm:flex-row">
+    <div id="products-container" class="
+    w-full grid gap-6 place-content-center p-4 max-w-4xl mx-auto
+    grid-cols-2 sm:grid-cols-3 xl:grid-cols-4">
+    </div>
+  </main>
+</div>
+  <!-- end products -->
+  <!-- start creative -->
+  <div class="relative flex justify-center items-center py-0 px-4 m-3 ">
+    <div class="absolute p-4 text-gray-600 bg-gray-200 bg-opacity-30 w-4/5  m-2  text-center ">
+      <h3 class="uppercase font-medium  text-md text-emerald-600"> improve skills of your chaild</h3>
+      <p class="text-xs text-emerald-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo vitae officia?</p>
+    </div>
+    <img class="py-0 px-7 w-full" src="/images/creative.jpg">
+  </div>
+  <!-- end creative -->
+  <!-- start ages -->
+  <div class="min-h-min mt-7 mb-4 relative overflow-hidden" id="ages">
+    <div class="container bg-zinc-50">
+      <h2 class=" text-emerald-500  text-2xl text-center font-medium ">Ages</h2>
+      <div class="flex justify-center gap-5 text-center cursor-pointer m-1 p-5 flex-wrap">
+        <div class="flex rounded-xl w-60 h-60 justify-center items-center overflow-hidden">
+          <img class="w-full h-full m-5" src="images/6monthes.jfif">
+          <a class="absolute mt-0  mb-4 text-white text-l text-center
+          border-4 border-solid p-2 bg-emerald-600   rounded-lg hover:bg-emerald-700 hover:text-white " href="#6 months" onclick="navigateToPage('6 months')">+6 monthes</a>
+        </div>
+        <div class="flex rounded-xl w-60 h-60 justify-center items-center overflow-hidden">
+          <img class="w-full h-full m-5" src="images/12monthes.jpg">
+          <a class="absolute mt-0  mb-4 text-white  text-l text-center border-4 border-solid p-2 bg-emerald-600 rounded-lg hover:bg-emerald-700 " href="#12 months" onclick="navigateToPage('12 months')">+12 monthes</a>
+        </div>
+        <div class="flex rounded-xl w-60 h-60 justify-center items-center overflow-hidden">
+          <img class="w-full h-full m-5" src="images/3years.jpg">
+          <a class="absolute mt-0  mb-4 text-white text-l text-center
+          border-4 border-solid p-2 bg-emerald-600   rounded-lg hover:bg-emerald-700 hover:text-white " href="#3 years" onclick="navigateToPage('3 years')">+3 years</a>
+        </div>
+        <div class="flex rounded-xl w-60 h-60 justify-center items-center overflow-hidden">
+          <img class="w-full h-full m-5" src="images/6years.jpg">
+          <a class="absolute mt-0  mb-4 text-white text-l text-center
+          border-4 border-solid p-2 bg-emerald-600   rounded-lg hover:bg-emerald-700 hover:text-white " href="#6 years" onclick="navigateToPage('6 years')">+6 years</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end ages -->
+  <!--start collection-->
+    <div class="container ">
+      <h2 class=" text-emerald-500  text-2xl text-center font-medium ">Our Collection</h2>
+      <div class=" flex  content-center justify-center m-2  py-3 px-2 flex-wrap gap-4 ">
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/room1.jfif">
+          <h2 class="absolute top-1/3 mt-0 mb-4 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">furniture</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/decore.jfif">
+          <h2 class="absolute top-1/3 mt-0 mb-4 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">decore</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/book (1).jpg">
+          <h2 class="absolute top-1/3 mt-0 mb-4 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer"> shelves</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/toilet.jfif">
+          <h2 class="absolute top-1/3 mt-0 mb-4 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">toilet</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/matress.jfif">
+          <h2 class="absolute top-1/3 mt-0 mb-4 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">mattress</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/wall paper.jfif">
+          <h2 class="absolute top-1/3 mt-0 mb-4 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">paper wall</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/kitchen.jfif">
+          <h2 class="absolute top-1/3 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">kitchen</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/3.jfif">
+          <h2 class="absolute top-1/3 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">toys</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/3.jfif">
+          <h2 class="absolute top-1/3 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">toys</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+        <div class="relative flex bg-white rounded-sm w-60 h-60 content-center items-center flex-col overflow-hidden duration-100 ">
+          <img class=" w-full h-full " src="images/3.jfif">
+          <h2 class="absolute top-1/3 bg-emerald-600 text-white text-lg text-center border-solid border-4 p-2 rounded-md duration-100 hover:bg-emerald-700 cursor-pointer">toys</h2>
+          <button class= "bg-emerald-300 text-white px-2 py-1 border-none rounded-md cursor-pointer absolute bottom-0  hover:bg-orange-600 ">view more</button>
+        </div>
+      </div>
+      </div>
+  <!--end collection-->
+  <!-- Start Footer -->
+  <div class="relative border-t-2 bg-emerald-50 p-2 w-full h-1/2 ">
+    <div class="container flex justify-around max-md:flex-col  items-center gap-1 ">
+      <div class=" flex items-center justify-center flex-col mb-2 mx-2">
+        <h2 class=" text-emerald-600 text-2xl m-2 text-nowrap">YOYO POWER</h2>
+        <p class="my-2 mx-0 text-sm text-emerald-600 text-centertext-wrap">Lorem ipsum dolor sit amet consectetur adipisicing <br> Officia itaque ratione nisi quae corporis neque
+          error eum ut expedita. Libero.</p>
+        <ul class=" flex ">
+          <li class="mr-5">
+            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-slate-600" href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="mr-5">
+            <a class="  bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-blue-400" href="#" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="mr-5">
+            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-red-600 "href="#" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="  flex justify-center  text-emerald-600 m-2 text-sm gap-2 max-sm:flex-col">
+        <div class="line flex  items-start mx-2 my-3 flex-col ">
+          <h2 class=" text-2xl text-emerald-600 text-center text-nowrap my-2">navigation</h2>
+          <ul class="flex flex-col flex-start mb-2">
+            <li class=" p-2"><a href="#index" onclick="navigateToPage('home')">Home</a></li>
+            <li class=" p-2"><a href="#about" onclick="navigateToPage('about')">About us</a></li>
+            <li class=" p-2"><a href="#services" onclick="navigateToPage('Services')">services</a></li>
+          </ul>
+        </div>
+        <div class="line flex  items-start mx-2 my-3 flex-col ">
+          <h2 class=" text-2xl text-emerald-600 text-center text-nowrap my-2 ">Quick Link</h2>
+          <ul>
+            <li class="p-2"><a href="#contact" onclick="navigateToPage('contact')">Contact us</a></li>
+            <li class="p-2"><a href="#Blog" onclick="navigateToPage('Blog')">Bolg</a></li>
+            <li class="p-2"><a href="#collection" onclick="navigateToPage('collection')">Gallery</a></li>
+            <li class="p-2"><a href="#pricing" onclick="navigateToPage('pricing')">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="line flex  items-start mx-2 my-3 flex-col">
+          <h2 class=" text-2xl text-emerald-600 text-center text-nowrap my-2 ">work information</h2>
+          <div class="p-2 flex justify-between">
+            <i class="far fa-clock fa-fw mr-2"></i>
+            <p>Business Hours: From 10:00 To 18:00</p>
+          </div>
+          <div class="p-2 flex justify-between ">
+            <i class="fas fa-phone-volume fa-fw mr-2"></i>
+            <span>01282852434  &  01220226198</span>
+
+          </div>
+          <div class="p-2 flex justify-between">
+            <i class="fas fa-map-marker-alt fa-fw mr-2"></i>
+            <p> Egypt, Alex, Inside The alburg, Room Number 220</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class=" absolute bottom-2 left-2/3  ">
+        <ul class=" flex items-center justify-between pt-4 gap-2 ">
+          <li>
+            <a href="#" class="paypal">
+              <i class="fa-brands fa-cc-paypal text-emerald-600 text-2xl hover:text-blue-600"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="visa">
+              <i class="fa-brands fa-cc-visa  text-emerald-600 text-2xl  hover:text-blue-600"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="mastercard">
+              <i class="fa-brands fa-cc-mastercard  text-emerald-600 text-2xl  hover:text-blue-600"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+  </div>
+    <div class=" p-5px py-0 text-center text-black m-2   ">حقوق الملكية محفوظة</div>
+ 
+  <!-- End Footer -->
+  <!-- javascript -->
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

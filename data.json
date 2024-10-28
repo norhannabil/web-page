@@ -1,0 +1,87 @@
+[
+  {
+      "id": 1,
+      "image": "images/arch rocker.jfif",
+      "name": "arch rocker",
+      "price": 3000,
+      "quantity": 1
+  },
+  {
+      "id": 2,
+      "image": "images/pikler triangle.jfif",
+      "name": "pikler triangle",
+      "price": 6500,
+      "quantity": 8
+  },
+  {
+      "id": 3,
+      "image": "images/book sheves.jpg",
+      "name": "book shelf",
+      "price": 2000,
+      "quantity": 1
+  },
+  {
+      "id": 4,
+      "image": "images/bed.jpg",
+      "name": "bed",
+      "price": 5000,
+      "quantity": 1
+  },
+  {
+      "id": 5,
+      "image": "images/pillow mat.jfif",
+      "name": "pillow mat",
+      "price": 1000,
+      "quantity": 1
+  },
+  {
+      "id": 6,
+      "image": "images/sensory table.jpg",
+      "name": "sensory table",
+      "price": 3000,
+      "quantity": 1
+  },
+  {
+      "id": 7,
+      "image": "images/frame.jfif",
+      "name": "frame",
+      "price": 500,
+      "quantity": 1
+  },
+  {
+      "id": 8,
+      "image": "images/room.jfif",
+      "name": "room",
+      "price": 4000,
+      "quantity": 1
+  },
+  {
+      "id": 9,
+      "image": "images/mat.jfif",
+      "name": "mat",
+      "price": 1000,
+      "quantity": 1
+  },
+  {
+      "id": 10,
+      "image": "images/kitchen helper (1).jfif",
+      "name": "kitchen helper",
+      "price": 4000,
+      "quantity": 1
+  },
+  {
+      "id": 11,
+      "image": "images/toilet.jfif",
+      "name": "toilet",
+      "price": 6000,
+      "quantity": 1
+  },
+  {
+      "id": 12,
+      "image": "images/decore.jfif",
+      "name": "decore",
+      "price": 4500,
+      "quantity": 1
+  }
+
+]

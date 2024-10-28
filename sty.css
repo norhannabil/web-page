@@ -1,0 +1,86 @@
+
+
+  
+  
+  
+  
+  
+@media only screen and (max-width:768px) {
+ 
+  
+  #toggle-Menu{
+      display: flex;
+     }
+   .header ul.showData {
+      display: flex;
+      flex-direction:column;
+      background-color:#f4f4f5;
+      justify-content: space-between;
+      width: 70%;
+        height: 250px;
+        position: absolute;
+        top: 41px;
+        right: 18%;
+      border-radius: 10px;
+      border: 1px solid rgb(22, 145, 124);;
+      text-decoration: none;
+      padding: 25px;
+      cursor: pointer;
+    }
+    .header ul.showData li {
+      text-align: left;
+      border-bottom: 1px solid rgb(22, 145, 124);
+      width: 100%;
+    }
+    .header ul.showData li a{
+      text-decoration: none;
+      list-style: none;
+      color: rgb(53, 131, 111);
+    }
+    .header ul {
+      display: none;
+    
+   }
+  }
+
+    #search-form.active{
+    display: inline-flex;
+   }
+
+
+
+
+
+   
+
+ .input:focus~label ,input:valid~label
+ {
+  bottom: 50px;
+  font-size: 20px;
+  background:#ecfdf5;
+}
+
+
+.input-group input #text{
+  text-wrap: wrap;
+  width: fit-content;
+ text-align: justify;
+ }
+ .submit{
+  position: relative;
+   font-size: 20px;
+   margin-left:80%;
+   padding: 5px;
+   background-color: #ffffffbb;
+   color: var(--text-color);
+   width:16%;
+   border: 1px solid var(--main-color);
+   border-radius: 5px;
+   cursor: pointer;
+  
+ }
+ .submit:hover{
+   background-color: var(--text-color);
+     color: #fff;
+ 
+ }
