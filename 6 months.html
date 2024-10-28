@@ -9,46 +9,63 @@
   <link rel="icon" type="image/png" href="images/logo (2).png" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="css/all.min.css">
-<!-- bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-
 </head>
-
-<body>
-
+<body class="bg-customColor">
   <!--start header-->
-  <div class="header">
-    <div class="container">
-      <div class="logo">
-        <img src="images/logo (2).png">
-        <h1><span>Y</span>OYO <span>P</span>OWER</h1>
+  <div class="header top-0 left-0 right-0 z-50 pr-0  fixed mt-1  ">
+    <div class="container flex justify-between items-center bg-zinc-100  text-white max-h-14 flex-nowrap  ">
+      <img src="images/logo (2).png" class="w-10 h-10 rounded-full bg-white">
+
+      
+        <ul class="  flex justify-between items-center cursor-pointer  list-none text-emerald-600 text-2xl  ">
+          <li><a href="#index" onclick="navigateToPage('home')"
+              class="h-10 p-1 overflow-hidden duration-75 my-0 mx-3 text-xl  hover:text-emerald-400">Home</a></li>
+          <li><a href="#products" onclick="navigateToPage('products')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">products</a></li>
+          <li><a href="#about" onclick="navigateToPage('about')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">About</a></li>
+          <li><a href="#collection" onclick="navigateToPage('collection')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">collection</a></li>
+          <li><a href="#contact" onclick="navigateToPage('contact')"
+              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">Contact</a></li>
+        </ul>
+      
+      <div class="icons flex justify-between items-center flex-row text-xl  cursor-pointer text-emerald-600">
+        <i class="fa-solid fa-bars text-xl hidden" onclick="show()" id="toggle-Menu"></i>
+      <i class="fa-solid fa-search px-3  hover:text-emerald-950" onclick="showbar()" id="search-btn"></i>
+      <div class="relative ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-emerald-950" width="28" height="28" viewBox="0 0 24 24" stroke-width="2"
+          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+          <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+        </svg>
+        <small id="cart-count"
+          class="bg-red-500 w-4 h-4 absolute -top-2 -left-2 rounded-full text-center text-xs text-emerald-50">0</small>
       </div>
-      <ul>
-        <li><a href="#index" onclick="navigateToPage('home')">Home</a></li>
-        <li><a href="#products" onclick="navigateToPage('products')">products</a></li>
-        <li><a href="#about" onclick="navigateToPage('about')">About</a></li>
-        <li><a href="#colection" onclick="navigateToPage('collection')">collection</a></li>
-        <li><a href="#contact" onclick="navigateToPage('contact')">Contact</a></li>
-      </ul>
-      <div class="icons">
-        <i class="fa-regular fa-bars" onclick="show()" id="toggle-Menu"></i>
-        <i class="fa-solid fa-search" onclick="showbar()" id="search-btn"></i>
-        <i class="fa-solid fa-bag-shopping" onclick="navigateToPage('cart')"></i>
-      </div>
-      <form action="" class="search-form">
-        <input type="search" id="search-bar" placeholder="what you looking for...">
-        <label for="search-bar" class="fas fa-search"></label>
-      </form>
     </div>
+
+      <form action="" id="search-form" class="   absolute container top-full left-0 right-0  bg-emerald-900  items-center z-50 py-2 px-2 border-t-2 rounded-md hidden ">
+        <input type="search" id="search-bar" placeholder="what you looking for..." class="  p-1 text-gray-800 text-lg rounded-lg w-full" >
+        <label for="search-bar" class="fas fa-search text-white cursor-pointer text-sm
+        my-0 mx-2.5 "></label>
+      </form>
+  </div>
   </div>
   <!--end header-->
 
@@ -58,68 +75,90 @@
 
 
 
-   <!-- Start Footer -->
-   <div class="footer">
-    <div class="container">
-      <div class="box1">
-        <h3>YOYO POWER</h3>
-        <ul class="social">
-          <li>
-            <a href="#" class="facebook">
+  <!-- Start Footer -->
+  <div class="relative border-t-2 bg-emerald-50 p-2 w-full h-1/2 ">
+    <div class="container flex justify-around max-md:flex-col  items-center gap-1 ">
+      <div class=" flex items-center justify-center flex-col mb-2 mx-2">
+        <h2 class=" text-emerald-600 text-2xl m-2 text-nowrap">YOYO POWER</h2>
+        <p class="my-2 mx-0 text-sm text-emerald-600 text-centertext-wrap">Lorem ipsum dolor sit amet consectetur adipisicing <br> Officia itaque ratione nisi quae corporis neque
+          error eum ut expedita. Libero.</p>
+        <ul class=" flex ">
+          <li class="mr-5">
+            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-slate-600" href="#" class="facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
-          <li>
-            <a href="#" class="twitter">
+          <li class="mr-5">
+            <a class="  bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-blue-400" href="#" class="twitter">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
-          <li>
-            <a href="#" class="youtube">
+          <li class="mr-5">
+            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-red-600 "href="#" class="youtube">
               <i class="fab fa-youtube"></i>
             </a>
           </li>
         </ul>
       </div>
-      <div class="box">
-        <div class="line">
-          <i class="fas fa-map-marker-alt fa-fw"></i>
-          <div class="info">Egypt, Alex, Inside The alburg, Room Number 220</div>
+      <div class="  flex justify-center  text-emerald-600 m-2 text-sm gap-2 max-sm:flex-col">
+        <div class="line flex  items-start mx-2 my-3 flex-col ">
+          <h2 class=" text-2xl text-emerald-600 text-center text-nowrap my-2">navigation</h2>
+          <ul class="flex flex-col flex-start mb-2">
+            <li class=" p-2"><a href="#index" onclick="navigateToPage('home')">Home</a></li>
+            <li class=" p-2"><a href="#about" onclick="navigateToPage('about')">About us</a></li>
+            <li class=" p-2"><a href="#services" onclick="navigateToPage('Services')">services</a></li>
+          </ul>
         </div>
-        <div class="line">
-          <i class="far fa-clock fa-fw"></i>
-          <div class="info">Business Hours: From 10:00 To 18:00</div>
+        <div class="line flex  items-start mx-2 my-3 flex-col ">
+          <h2 class=" text-2xl text-emerald-600 text-center text-nowrap my-2 ">Quick Link</h2>
+          <ul>
+            <li class="p-2"><a href="#contact" onclick="navigateToPage('contact')">Contact us</a></li>
+            <li class="p-2"><a href="#Blog" onclick="navigateToPage('Blog')">Bolg</a></li>
+            <li class="p-2"><a href="#collection" onclick="navigateToPage('collection')">Gallery</a></li>
+            <li class="p-2"><a href="#pricing" onclick="navigateToPage('pricing')">Pricing</a></li>
+          </ul>
         </div>
-        <div class="line">
-          <i class="fas fa-phone-volume fa-fw"></i>
-          <div class="info">
-            <span>01282852434</span>
-            <span>01220226198</span>
+        <div class="line flex  items-start mx-2 my-3 flex-col">
+          <h2 class=" text-2xl text-emerald-600 text-center text-nowrap my-2 ">work information</h2>
+          <div class="p-2 flex justify-between">
+            <i class="far fa-clock fa-fw mr-2"></i>
+            <p>Business Hours: From 10:00 To 18:00</p>
+          </div>
+          <div class="p-2 flex justify-between ">
+            <i class="fas fa-phone-volume fa-fw mr-2"></i>
+            <span>01282852434  &  01220226198</span>
+
+          </div>
+          <div class="p-2 flex justify-between">
+            <i class="fas fa-map-marker-alt fa-fw mr-2"></i>
+            <p> Egypt, Alex, Inside The alburg, Room Number 220</p>
           </div>
         </div>
       </div>
-      <div class="pay-ways">
-        <ul class="social">
+    </div>
+      <div class=" absolute bottom-2 left-2/3  ">
+        <ul class=" flex items-center justify-between pt-4 gap-2 ">
           <li>
             <a href="#" class="paypal">
-              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-paypal text-emerald-600 text-2xl hover:text-blue-600"></i>
             </a>
           </li>
           <li>
             <a href="#" class="visa">
-              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-visa  text-emerald-600 text-2xl  hover:text-blue-600"></i>
             </a>
           </li>
           <li>
             <a href="#" class="mastercard">
-              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-mastercard  text-emerald-600 text-2xl  hover:text-blue-600"></i>
             </a>
           </li>
         </ul>
       </div>
-    </div>
-    <div class="copyright">حقوق الملكية محفوظة</div>
+    
   </div>
+    <div class=" p-5px py-0 text-center text-black m-2   ">حقوق الملكية محفوظة</div>
+ 
   <!-- End Footer -->
   <!-- javascript -->
   <script src="/js/main.js"></script>
