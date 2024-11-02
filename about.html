@@ -24,124 +24,96 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 </head>
+
 <body class="bg-customColor">
   <!--start header-->
   <div class="header top-0 left-0 right-0 z-50 pr-0  fixed mt-1  ">
     <div class="container flex justify-between items-center bg-zinc-100  text-white max-h-14 flex-nowrap  ">
       <img src="images/logo (2).png" class="w-10 h-10 rounded-full bg-white">
 
-      
-        <ul class="  flex justify-between items-center cursor-pointer  list-none text-emerald-600 text-2xl  ">
-          <li><a href="#index" onclick="navigateToPage('home')"
-              class="h-10 p-1 overflow-hidden duration-75 my-0 mx-3 text-xl  hover:text-emerald-400">Home</a></li>
-          <li><a href="#products" onclick="navigateToPage('products')"
-              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">products</a></li>
-          <li><a href="#about" onclick="navigateToPage('about')"
-              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">About</a></li>
-          <li><a href="#collection" onclick="navigateToPage('collection')"
-              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">collection</a></li>
-          <li><a href="#contact" onclick="navigateToPage('contact')"
-              class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">Contact</a></li>
-        </ul>
-      
+
+      <ul class="  flex justify-between items-center cursor-pointer  list-none text-emerald-600 text-2xl  ">
+        <li><a href="#index" onclick="navigateToPage('home')"
+            class="h-10 p-1 overflow-hidden duration-75 my-0 mx-3 text-xl  hover:text-emerald-400">Home</a></li>
+        <li><a href="#products" onclick="navigateToPage('products')"
+            class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">products</a></li>
+        <li><a href="#about" onclick="navigateToPage('about')"
+            class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">About</a></li>
+        <li><a href="#collection" onclick="navigateToPage('collection')"
+            class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">collection</a></li>
+        <li><a href="#contact" onclick="navigateToPage('contact')"
+            class="h-10 p-1 overflow-hidden  duration-75 my-0 mx-3 text-xl hover:text-emerald-400">Contact</a></li>
+      </ul>
+
       <div class="icons flex justify-between items-center flex-row text-xl  cursor-pointer text-emerald-600">
         <i class="fa-solid fa-bars text-xl hidden" onclick="show()" id="toggle-Menu"></i>
-      <i class="fa-solid fa-search px-3  hover:text-emerald-950" onclick="showbar()" id="search-btn"></i>
-      <div class="relative ">
-        <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-emerald-950" width="28" height="28" viewBox="0 0 24 24" stroke-width="2"
-          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
-          <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
-        </svg>
-        <small id="cart-count"
-          class="bg-red-500 w-4 h-4 absolute -top-2 -left-2 rounded-full text-center text-xs text-emerald-50">0</small>
+        <i class="fa-solid fa-search px-3  hover:text-emerald-950" onclick="showbar()" id="search-btn"></i>
+        <div class="relative ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-emerald-950" width="28" height="28"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            fill="none">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+          <small id="cart-count"
+            class="bg-red-500 w-4 h-4 absolute -top-2 -left-2 rounded-full text-center text-xs text-emerald-50">0</small>
+        </div>
       </div>
-    </div>
 
-      <form action="" id="search-form" class="   absolute container top-full left-0 right-0  bg-emerald-900  items-center z-50 py-2 px-2 border-t-2 rounded-md hidden ">
-        <input type="search" id="search-bar" placeholder="what you looking for..." class="  p-1 text-gray-800 text-lg rounded-lg w-full" >
+      <form action="" id="search-form"
+        class="   absolute container top-full left-0 right-0  bg-emerald-900  items-center z-50 py-2 px-2 border-t-2 rounded-md hidden ">
+        <input type="search" id="search-bar" placeholder="what you looking for..."
+          class="  p-1 text-gray-800 text-lg rounded-lg w-full">
         <label for="search-bar" class="fas fa-search text-white cursor-pointer text-sm
         my-0 mx-2.5 "></label>
       </form>
-  </div>
+    </div>
   </div>
   <!--end header-->
-    <div class="about">
-        <div class="container">
-        <h1 class="main-nav">our story</h1>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloribus inventore quo dolores vero
-            consequuntur architecto ipsam adipisci, voluptate delectus totam, porro iusto tenetur quam quasi harum sed
-            veritatis reiciendis? Commodi tempore tempora fugiat voluptas dolorem quas, soluta est aut quod voluptates.
-            Harum maxime non animi fugiat? Voluptates animi obcaecati minus voluptas aut totam quod earum quo nemo
-            dolore quaerat exercitationem eius quam expedita excepturi, corrupti veniam mollitia, quia non repellendus
-            natus omnis accusamus labore! Similique saepe soluta sed nesciunt eum officiis quaerat. Repellendus fugit,
-            saepe molestias cumque optio nam tenetur, nulla quisquam, debitis quae odit vitae omnis possimus aut
-            perspiciatis autem error. Incidunt saepe earum minus esse vel, quia quis porro at similique maxime dolorum
-            dolor, explicabo ipsum odio asperiores delectus blanditiis, quae recusandae consequatur et laboriosam ab
-            quod? A natus sint quis magni laborum vero possimus dolores iste non aliquid incidunt ad nisi labore, sed
-            quibusdam debitis explicabo, dignissimos quisquam ipsa nemo! Cum ullam debitis ea? Quae mollitia magni alias
-            totam ipsa itaque laudantium, facilis optio praesentium, consectetur ipsum magnam soluta repellendus
-            adipisci saepe! Dolores minus saepe eius placeat quod et excepturi animi quam nihil eum. Veritatis nesciunt
-            voluptatibus quas eligendi quis amet nulla corporis! Dolores, consequatur corrupti inventore vitae
-            laudantium officia perferendis architecto hic consequuntur commodi ipsa. Iure libero dolore, architecto
-            repudiandae nam officia pariatur voluptas iusto nisi laboriosam unde commodi blanditiis quo consectetur
-            accusamus sunt culpa excepturi similique accusantium saepe ea ab dolorem odio? Iste labore, nisi rem dolore
-            tempore vero nulla eligendi cupiditate consequatur? Optio expedita ratione consequatur quibusdam voluptas,
-            officiis recusandae excepturi quisquam repellendus! Numquam aperiam earum sed magnam nam dicta quod commodi
-            sapiente facere deleniti non temporibus, aspernatur atque eligendi enim iure quasi rerum magni. Harum ipsam
-            ut minima, vero porro inventore dolore magnam quidem amet veritatis. Vitae cumque esse dolores. Pariatur
-            aspernatur quia optio, consequatur itaque reiciendis, accusantium, laboriosam corrupti expedita nemo
-            facilis! Eius aliquid ex unde praesentium, dolor aliquam ea, magni explicabo necessitatibus deserunt aperiam
-            reprehenderit quaerat non id deleniti tenetur fugiat reiciendis soluta tempora quos atque. Corrupti veniam
-            esse quod pariatur incidunt. Veritatis ipsa eum optio obcaecati aliquam nihil neque quod, illo quae enim
-            iure voluptatum aut aperiam, repudiandae rerum perferendis tempore quasi, fuga corporis nesciunt iusto
-            accusamus tenetur similique ipsum. Explicabo, nesciunt ipsum reiciendis, minima ea maxime repellat ad
-            blanditiis fuga facilis placeat pariatur unde! Pariatur accusantium quaerat assumenda vero. Corporis
-            excepturi, inventore deleniti sunt architecto ut aliquam labore commodi incidunt sapiente repellendus
-            fugiat. Officiis accusamus aperiam aut minima, aliquid dolores nemo odio facilis suscipit magnam recusandae
-            voluptatem tempora cumque totam eum harum numquam adipisci soluta illo cupiditate in sapiente aspernatur?
-            Ipsa ipsam molestiae eveniet nihil! Sed vel sit quo cumque, dolores nihil neque, ut repellendus commodi eius
-            itaque quos laboriosam, voluptatum ipsa placeat ipsum modi minus quisquam reprehenderit distinctio?
-            Excepturi illum ut nostrum commodi. Minima laboriosam tempora eveniet iure alias accusantium labore libero
-            fugiat iste cupiditate earum aut illo natus aperiam ut, dolore minus? Labore, ea unde vel placeat id
-            veritatis, libero numquam excepturi qui quasi deserunt iste nobis saepe impedit ducimus. Dolorem tempora
-            aspernatur non sit fuga laudantium quis illo? Ducimus fugiat debitis consequatur, rem quisquam blanditiis
-            explicabo totam dolores eos, id odio molestiae ad deleniti ipsum harum commodi esse! Ipsa, itaque
-            consequuntur maiores in veniam aut quaerat ad recusandae, enim id ratione cumque dolor fugiat accusantium
-            libero cum. Nesciunt eaque qui, minima aut ut, voluptatibus perspiciatis sunt eos corporis est expedita
-            voluptatem reiciendis explicabo ducimus nihil quisquam laboriosam facilis iusto doloribus impedit tempore.
-            Nesciunt suscipit et, dolor illum distinctio, eos sequi voluptatem nihil ea error repudiandae! Temporibus
-            repudiandae aut perferendis illum deleniti ut eum dolor. Ipsa commodi voluptatibus repudiandae. Soluta
-            corrupti consequatur omnis, porro totam repudiandae itaque! Impedit mollitia commodi consectetur nemo, unde
-            reiciendis, alias consequatur enim, eveniet eos sint est vero rerum! Distinctio nemo voluptatibus dolor
-            architecto amet numquam. Et?</P>
+  <div class="about min-h-dvh bg-zinc-50">
+    <div class="container ">
+      <h1 class=" text-emerald-500  text-4xl text-center  uppercase text-wrap font-serif  pt-20">about yoyo power</h1>
+      <div class="info flex justify-between pt-10 items-center max-md:flex-col">
+        <img src="images/about.jfif" class="w-1/4 h-1/4 items-center rounded-full " alt="about us">
+
+        <P class=" text-2xl font-serif font-medium text-emerald-900   px-10  py-5 text-right leading-10 max-md:text-lg ">
+          مرحبًا بكم في موقعنا
+          ونسعى لتقديم منتجات مبتكرة ومستدامة مصنوعة من الأخشاب الطبيعية أسسنا مشروعناانطلاقًا من شغفنا بالتصميم وصناعة
+          الألعاب التي تساعد الأطفال على اكتشاف قدراتهم وتطوير مهاراتهم الحركية بطرق ممتعة وآمنة. نحن ملتزمون باستخدام
+          أخشاب الزان الطبيعية والمعروفة بجودتها ومتانتها، لضمان أن تكون كل قطعة ننتجها ليس فقط ممتعة، بل أيضًا آمنةوصديقة للبيئة.
+          نطمح إلى أن نكون مصدر إلهام للآباء والأمهات الذين يبحثون عن أفضل الطرق لدعم نمو أطفالهم بشكل صحي، ونحن فخورون بتقديم منتجات تمزج بين الفن والوظيفة، بحيث تستمتع العائلات بتجربة لعب تعليمية ومفيدة.
+          في ، نؤمن بأن اللعب هو مفتاح التعلم، ونحن هنا لنشارككم هذا الشغف، ونسعى جاهدين لتقديم كل ما هو أفضل لطفلكم
+
+        </P>
+      </div>
     </div>
-
-    </div>
-
-
+  </div>
   <!-- Start Footer -->
   <div class="relative border-t-2 bg-emerald-50 p-2 w-full h-1/2 ">
     <div class="container flex justify-around max-md:flex-col  items-center gap-1 ">
       <div class=" flex items-center justify-center flex-col mb-2 mx-2">
         <h2 class=" text-emerald-600 text-2xl m-2 text-nowrap">YOYO POWER</h2>
-        <p class="my-2 mx-0 text-sm text-emerald-600 text-centertext-wrap">Lorem ipsum dolor sit amet consectetur adipisicing <br> Officia itaque ratione nisi quae corporis neque
+        <p class="my-2 mx-0 text-sm text-emerald-600 text-centertext-wrap">Lorem ipsum dolor sit amet consectetur
+          adipisicing <br> Officia itaque ratione nisi quae corporis neque
           error eum ut expedita. Libero.</p>
         <ul class=" flex ">
           <li class="mr-5">
-            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-slate-600" href="#" class="facebook">
+            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-slate-600"
+              href="#" class="facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
           <li class="mr-5">
-            <a class="  bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-blue-400" href="#" class="twitter">
+            <a class="  bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-blue-400"
+              href="#" class="twitter">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li class="mr-5">
-            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-red-600 "href="#" class="youtube">
+            <a class=" bg-blue-600 text-white inline-flex justify-center items-center w-7 h-7 text-sm hover:bg-red-600 "
+              href="#" class="youtube">
               <i class="fab fa-youtube"></i>
             </a>
           </li>
@@ -173,7 +145,7 @@
           </div>
           <div class="p-2 flex justify-between ">
             <i class="fas fa-phone-volume fa-fw mr-2"></i>
-            <span>01282852434  &  01220226198</span>
+            <span>01282852434 & 01220226198</span>
 
           </div>
           <div class="p-2 flex justify-between">
@@ -183,29 +155,29 @@
         </div>
       </div>
     </div>
-      <div class=" absolute bottom-2 left-2/3  ">
-        <ul class=" flex items-center justify-between pt-4 gap-2 ">
-          <li>
-            <a href="#" class="paypal">
-              <i class="fa-brands fa-cc-paypal text-emerald-600 text-2xl hover:text-blue-600"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="visa">
-              <i class="fa-brands fa-cc-visa  text-emerald-600 text-2xl  hover:text-blue-600"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="mastercard">
-              <i class="fa-brands fa-cc-mastercard  text-emerald-600 text-2xl  hover:text-blue-600"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    
+    <div class=" absolute bottom-2 left-2/3  ">
+      <ul class=" flex items-center justify-between pt-4 gap-2 ">
+        <li>
+          <a href="#" class="paypal">
+            <i class="fa-brands fa-cc-paypal text-emerald-600 text-2xl hover:text-blue-600"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="visa">
+            <i class="fa-brands fa-cc-visa  text-emerald-600 text-2xl  hover:text-blue-600"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mastercard">
+            <i class="fa-brands fa-cc-mastercard  text-emerald-600 text-2xl  hover:text-blue-600"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
   </div>
-    <div class=" p-5px py-0 text-center text-black m-2   ">حقوق الملكية محفوظة</div>
- 
+  <div class=" p-5px py-0 text-center text-black m-2   ">حقوق الملكية محفوظة</div>
+
   <!-- End Footer -->
   <!-- javascript -->
   <script src="js/main.js"></script>
