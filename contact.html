@@ -45,8 +45,7 @@
         </ul>
       
       <div class="icons flex justify-between items-center flex-row text-xl  cursor-pointer text-emerald-600">
-        <i class="fa-solid fa-bars text-xl hidden" onclick="show()" id="toggle-Menu"></i>
-      <i class="fa-solid fa-search px-3  hover:text-emerald-950" onclick="showbar()" id="search-btn"></i>
+        <i class="fa-solid fa-bars text-xl hidden m-3" onclick="show()" id="toggle-Menu"></i>
       <div class="relative ">
         <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-emerald-950" width="28" height="28" viewBox="0 0 24 24" stroke-width="2"
           stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
@@ -60,11 +59,7 @@
       </div>
     </div>
 
-      <form action="" id="search-form" class="   absolute container top-full left-0 right-0  bg-emerald-900  items-center z-50 py-2 px-2 border-t-2 rounded-md hidden ">
-        <input type="search" id="search-bar" placeholder="what you looking for..." class="  p-1 text-gray-800 text-lg rounded-lg w-full" >
-        <label for="search-bar" class="fas fa-search text-white cursor-pointer text-sm
-        my-0 mx-2.5 "></label>
-      </form>
+     
   </div>
   </div>
   <!--end header-->
@@ -72,31 +67,45 @@
 
     <!--start contact-->
    <div class="min-h-dvh bg-back">
-        <div class="container  ">
-            <h1 class="text-emerald-500  text-2xl text-center font-medium pb-5">contact us</h1>
-            <p class="bg-white text-emerald-600 p-5 my-5  ">
-                SUPPORT HOURS: SUNDAY THROUGH THURSDAY FROM 9:00 AM TO 5:00 PM.<br>
-                E-MAIL US:<br>
+    <h1 class="text-emerald-500  text-4xl text-center font-medium py-20 uppercase underline">contact us</h1>
+        <div class="container relative flex justify-between items-center bg-gray-50 w-full max-md:flex-col">
+          
+          <div class=" mx-4  my-3 ">
+            
+            <p class="bg-white text-emerald-600 p-3  text-center text-xl  ">
+              <span class="text-emerald-900 text-2xl font-bold">SUPPORT HOURS:</span> SUNDAY THROUGH THURSDAY FROM 9:00 AM TO 5:00 PM.<br>
+               <span class="text-emerald-900 text-2xl font-bold"> E-MAIL US:</span><br>
                 For questions or problems about your order please email: yoyopower24@gmail.com
                 If you are inquiring about commercial or school/nursery sales, please email: projects@yoyopower.com
                 P.S please make sure to visit our FAQ section before sending out an e-mail. This saves us both time and
                 makes us available to respond to other inquiries promptly!
             </p>
-                <form class="contact-form p-4 relative flex  justify-between items-start flex-col bg-transparent  rounded-md border-4  border-emerald-800  w-full my-8" action="yoyopower.php" method="post">
-                    <div class="input-group   relative m-4 pl-2 ">
-                        <input type="text" required    id="user" class="input  p-2 w-1/2 h-11 text-lg border-3  border-emerald-950 rounded-lg outline-none text-emerald-600 bg-transparent overflow-hidden">
+          </div>
+
+
+            <div class="relative">
+                <form class="contact-form p-4  flex  justify-between items-start flex-col bg-transparent  rounded-md border-4  border-emerald-800  w-96 my-8" action="yoyopower.php" method="post">
+                    <div class="input-group    my-3 pl-2 ">
+                        <input type="text" required    id="user" class="input  p-2 w-full  text-lg border-3  border-emerald-950  outline-none text-emerald-600 bg-transparent overflow-hidden block" maxlength="20" >
                         <label class="input-label  absolute  left-2 translate-y-1/2 py-0 px-7 pointer-events-none text-emerald-900 duration-700 ease-in-out">Name</label>
                     </div>
-                    <div class="input-group relative m-4 pl-2">
-                        <input type="email" required id="e-mail" class="input p-2 w-1/2 h-11 text-lg   border-3  border-emerald-950 rounded-lg outline-none text-emerald-600 bg-transparent overflow-hidden">
+                    <div class="input-group  my-3 pl-2">
+                        <input type="email" required id="e-mail" class="input p-2 w-full  text-lg   border-3  border-emerald-950  outline-none text-emerald-600 bg-transparent block "maxlength="30">
                         <label class="input-label absolute top--1/2 left-2 translate-y-1/2 py-0 px-7 pointer-events-none text-emerald-900 duration-700 ease-in-out">E-MAIL</label>
                     </div>
-                    <div class="input-group relative m-4 pl-2">
-                        <input type="text" required  id="text" class="input  p-20 w-1/2 h-11 text-lg  border-3  border-emerald-950 rounded-lg outline-none text-emerald-600 bg-transparent text-wrap text-start overflow-hidden">
+                    
+                    
+                    <div class="input-group  my-3 pl-2">
+                        <textarea type="text" required  id="text" class="input px-2  py-3 w-full  text-lg  border-3  border-emerald-950  outline-none text-emerald-600 bg-transparent text-wrap  block" rows="4"  maxlength="200"></textarea>
                         <label class="input-label absolute top--1/2 left-2 translate-y-1/2 py-0 px-7 pointer-events-none text-emerald-900 duration-700 ease-in-out">message</label>
                     </div>
-                    <input type="submit" class="submit">
+                    <button class="bg-emerald-950 w-1/2 text-center p-2 m-2 text-white transition-colors duration-50 ease-in-out hover:bg-white hover:!text-emerald-950  hover:border-4 hover:border-emerald-950">
+                      Submit
+                  </button>
+                  
                 </form>
+
+              </div>
             </div>
           </div>
         <!--end contact-->

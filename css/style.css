@@ -53,11 +53,11 @@
 
    
 
- .input:focus~label ,input:valid~label
+  .input-group input:focus~label ,.input-group input:valid~label ,.input-group textarea:focus~label
  {
-  bottom: 50px;
+  top: -30px;
   font-size: 20px;
-
+background-color: rgb(249 250 251);
 }
 
 
