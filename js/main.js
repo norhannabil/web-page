@@ -98,6 +98,7 @@ function createProductElement(product){
             data-category = "${product.category}"
             data-name = "${product.name}"
         >
+        
             <img src="${product.image}" alt="product" class="w-full h-full object-cover">
             <button class="status bg-black absolute bottom-0 left-0 right-0 py-2 translate-y-full group-hover:translate-y-0 transition text-white">
                 إضافة إلى السلة
@@ -108,7 +109,8 @@ function createProductElement(product){
     `;
     productElement.querySelector('.status').addEventListener('click', updateCart)
     return productElement;
-}
+};
+
 
 /*updatecart*/
 function updateCart(e){
@@ -156,7 +158,6 @@ function filterProducts() {
         }
   });
 }
-
-
+//-----------------------------------------------------
 
 
