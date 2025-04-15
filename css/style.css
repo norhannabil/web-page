@@ -84,3 +84,23 @@ background-color: rgb(249 250 251);
      color: #fff;
  
  }
+ .client::before{
+    content: "f060"; /* Unicode أيقونة السهم لليسار */
+    font-family: "Font Awesome 6 Free"; /* استدعاء الخط */
+    font-weight: 900;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white
+ }
+ .client::after{
+  content: "f061"; /* Unicode أيقونة السهم لليمين */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(255, 0, 0);
+ }
